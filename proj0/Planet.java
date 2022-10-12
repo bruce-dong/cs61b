@@ -80,4 +80,9 @@ public class Planet {
         xxPos = newXxPos;
         yyPos = newYyPos;
     }
+
+    public void draw() {
+        String imgPath = "images/" + imgFileName;
+        StdDraw.picture(xxPos, yyPos, imgPath);
+    }
 }
